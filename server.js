@@ -3,7 +3,7 @@ const app = express();
 
 const mockUserData = [{ name: "Mark" }, { name: "Jill" }];
 
-app.get("/", (req, res) => {
+app.get("/users", (req, res) => {
     res.json({
         success: true,
         message: "successfully got users. Nice!",
